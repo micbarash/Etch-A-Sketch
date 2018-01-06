@@ -1,0 +1,17 @@
+:root {
+    --columnNumber: 13;
+}
+
+#container {
+  border: 2px solid black;
+  height: 600px;
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(var(--columnNumber), 1fr);
+}
+
+div {
+  border: 2px solid black;
+  margin: 1px;
+  display: inline-block;
+}
