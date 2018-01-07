@@ -1,24 +1,47 @@
 :root {
     --columnNumber: 10;
 }
+div {
+  background-color: #eee;
+  border: 2px solid black;
+  margin: 1px;
+  display: inline-block;
+}
+h4 {
+  font-family: Verdana;
+}
+h3 {
+  font-family: Verdana;
+  text-decoration: underline;
+}
 .container {
   display: grid;
   grid-template-columns: 15% 85%;
 }
 #sideBar{
+  display: grid;
+  grid-template-rows: 10% 10% 30% 50%;
   background-color: #ddd;
+  padding: 3px;
+  border-radius: 7px;
 }
 #grid {
+  position: relative;
+  left: 150px;
   border: 2px solid black;
   height: 600px;
   width: 600px;
   display: grid;
   grid-template-columns: repeat(var(--columnNumber), 1fr);
 }
+#resetButton {
 
-div {
-  background-color: #eee;
-  border: 2px solid black;
-  margin: 1px;
-  display: inline-block;
+  padding: 3px;
+}
+#color {
+  border: 0;
+  background-color: inherit;
+}
+#colorChoice {
+  top: 45px;
 }
