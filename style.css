@@ -1,8 +1,14 @@
 :root {
-    --columnNumber: 13;
+    --columnNumber: 10;
 }
-
-#container {
+.container {
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+#sideBar{
+  background-color: #ddd;
+}
+#grid {
   border: 2px solid black;
   height: 600px;
   width: 600px;
@@ -11,6 +17,7 @@
 }
 
 div {
+  background-color: #eee;
   border: 2px solid black;
   margin: 1px;
   display: inline-block;
